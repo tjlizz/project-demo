@@ -1,6 +1,6 @@
 package com.github.projectdemo.controller;
 
-import com.github.projectdemo.service.UserService;
+import com.github.projectdemo.service.DeveloperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @create 2021-06-15 17:32
  */
 @RestController
-@RequestMapping("/api/users")
-public class UserController {
+@RequestMapping("/api/developers")
+public class DeveloperController {
 
     @Autowired
-    private UserService userService;
+    private DeveloperService developerService;
 
     @GetMapping("/")
     public ResponseEntity getList() {
 
-        return ResponseEntity.ok(userService.getList());
+        return ResponseEntity.ok(developerService.getList());
 
     }
 

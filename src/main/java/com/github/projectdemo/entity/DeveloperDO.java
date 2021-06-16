@@ -13,13 +13,12 @@ import lombok.Data;
  */
 @Data
 @TableName("developer")
-public class UserDO {
+public class DeveloperDO {
 
     @JsonSerialize(using = ToStringSerializer.class)
     @TableId(type = IdType.ASSIGN_ID)
-    private Long userId;
+    private Long devId;
     private String userName;
-    private String userPwd;
 
 
 }
