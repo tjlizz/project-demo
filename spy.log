@@ -1,1 +1,0 @@
-1623750103918|24|statement|connection 0|url jdbc:p6spy:mysql://192.168.11.75:3306/lz-cim?serverTimezone=Asia/Shanghai|SELECT  user_id,user_name,user_pwd  FROM developer|SELECT  user_id,user_name,user_pwd  FROM developer
